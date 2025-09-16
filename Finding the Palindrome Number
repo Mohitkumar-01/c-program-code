@@ -1,0 +1,19 @@
+//Finding the Palindrome Number
+#include<stdio.h>
+int main(){
+    int num,remainder,reversed=0,temporary;
+    printf("Enter an Integer:");
+    scanf("%d",&num);
+    temporary=num;
+    while(num!=0){
+        remainder = num %10;
+        reversed = reversed*10 + remainder;
+        num /= 10;}
+      if (temporary==reversed)
+      printf("It is a Plaindrome Number\n",temporary);
+      else{
+          printf("It is Not a Palindrome Number",temporary);
+      }
+      return 0;
+        
+}
