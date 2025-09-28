@@ -1,0 +1,19 @@
+// Printing the prime number form 1 to n
+#include<stdio.h>
+int main (){
+    int a,b,i,j;
+    printf("Enter the Starting Number: ");
+    scanf("%d",&a);
+    printf("Enter the Ending Number: ");
+    scanf("%d",&b);
+    for(i=a;i<=b;i++){
+        for(j=2;j<=i;j++){
+            if(i%j==0)
+            break;
+        }
+        if(i==j)
+     printf("%d ",j);
+    }
+    printf("They are the Prime Numbers\n");
+    return 0;
+}
